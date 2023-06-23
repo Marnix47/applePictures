@@ -4,9 +4,10 @@ new p5(function(c){
         c.angleMode(c.RADIANS)
         c.createCanvas(1920, 1080);
         planets.push(new Body("sun"))
-        planets.push(new Body({color: "blue", radius: 30, speed: 5, distance: 300, parent: planets[0]}))
-        planets.push(new Body({color:"brown", radius: 15, speed: 5, distance: 100, parent: planets[1]}))
-        planets.push(new Body({color:"white", radius: 5, speed: 10, distance: 40, parent: planets[2]}))
+        planets.push(new Body({color: "blue", radius: 30, speed: 2.5, distance: 300, parent: planets[0]}))
+        planets.push(new Body({color:"brown", radius: 15, speed: 2.5, distance: 100, parent: planets[1]}))
+        planets.push(new Body({color:"white", radius: 5, speed: 5, distance: 40, parent: planets[2]}))
+        planets.push(new Body({color:"orange", radius: 3, speed: 3.5, distance: 20, parent: planets[3]}))
     }
     c.draw = function(){
         c.background("black")
